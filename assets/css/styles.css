@@ -1,15 +1,22 @@
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto-regular-webfont.woff") format("woff"),
+        url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+
 .container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 1px solid black;
+    font-size: 1.25rem;
 }
 
 .navbar-container {
     display: flex;
     height: 10vh;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "roboto-regular"
 }
 
 .nav-links {

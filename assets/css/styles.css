@@ -46,3 +46,62 @@ a {
 }
 
 /* Estilos sección home */
+body {
+    font-family: sans-serif;
+    background-color: #FEFEFE;
+}
+
+#page-wrapper {
+    width: 75rem;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+#home {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#introduction-container,
+#figure-container {
+    width: 50%;
+}
+
+h1,
+h2 {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: slateblue;
+    font-size: 5rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+h1 {
+    font-family: "roboto-regular-condensed";
+    color: #1E201E;
+    font-size: 1.25rem;
+    height: 30%;
+}
+
+#figure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cover-image {
+    max-width: 25rem;
+    max-height: 25rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,29 @@
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.navbar-container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    margin: 0 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}

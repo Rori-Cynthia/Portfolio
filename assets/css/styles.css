@@ -9,14 +9,14 @@
     padding: 0;
     box-sizing: border-box;
     border: 1px solid black;
-    font-size: 1.25rem;
 }
 
 .navbar-container {
     display: flex;
     height: 10vh;
     align-items: center;
-    font-family: "roboto-regular"
+    font-family: "roboto-regular";
+    font-size: 1.25rem
 }
 
 .nav-links {

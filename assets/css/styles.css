@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .navbar-container {
@@ -16,10 +15,11 @@
     height: 10vh;
     align-items: center;
     font-family: "roboto-regular";
-    font-size: 1.25rem
+    font-size: 1.15rem;
 }
 
 .nav-links {
+
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -28,9 +28,11 @@
 }
 
 li {
-    margin: 0 3.5rem;
+
+    margin: 0 3rem;
 }
 
 a {
+    color: #1E201E;
     text-decoration: none;
 }

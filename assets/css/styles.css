@@ -4,11 +4,18 @@
         url("../fonts/roboto-regular-webfont.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "roboto-regular-condensed";
+    src: url("../fonts/robotocondensed-variablefont_wght-webfont.woff") format("woff"),
+        url("../fonts/robotocondensed-variablefont_wght-webfont.woff2") format("woff2");
+}
+
 /* Estilos Navbar */
 .container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 0;
 }
 
 .navbar-container {

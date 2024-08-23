@@ -26,18 +26,19 @@ body {
     width: 75rem;
     margin: 0 auto;
     height: 100vh;
-    border: 1px solid rgb(64, 33, 202);
 }
 
 /* Estilos Navbar */
 header {
+    height: 10vh;
+    width: 100%;
     position: fixed;
+    top: 0;
 }
 
 .navbar-container {
-    height: 10vh;
     font-family: "roboto-regular";
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
 .nav-links {
@@ -63,7 +64,6 @@ a {
     display: flex;
     height: 80vh;
     width: 100%;
-    border: 1px solid red;
 }
 
 #introduction-container,

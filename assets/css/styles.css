@@ -4,6 +4,7 @@
         url("../fonts/roboto-regular-webfont.woff2") format("woff2");
 }
 
+/* Estilos Navbar */
 .container {
     margin: 0;
     padding: 0;
@@ -36,3 +37,5 @@ a {
     color: #1E201E;
     text-decoration: none;
 }
+
+/* Estilos sección home */

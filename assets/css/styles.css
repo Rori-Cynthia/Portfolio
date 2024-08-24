@@ -26,7 +26,6 @@
 
 /* Estilos generales */
 body {
-    font-family: sans-serif;
     background-color: #FEFEFE;
     height: 100%;
 }
@@ -43,6 +42,7 @@ body {
     width: 75rem;
     height: 100%;
     margin: 4.375rem auto 0 auto;
+    color: #46535D;
 }
 
 /* Estilos Navbar */
@@ -72,7 +72,7 @@ li {
 }
 
 a {
-    color: #1E201E;
+    color: #405D72;
     text-decoration: none;
 }
 
@@ -98,18 +98,19 @@ a {
 }
 
 #home h2 {
-    color: slateblue;
+    color: #BC8CF2;
     font-size: 5rem;
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    font-family: sans-serif;
 }
 
 #home h1 {
     font-family: "roboto-regular-condensed";
-    color: #1E201E;
+    color: #6D8299;
     font-size: 1.25rem;
     height: 30%;
 }
@@ -149,7 +150,7 @@ a {
 #work h3 {
     margin: 0;
     width: 30%;
-    font-family: "roboto-light";
+    font-family: "roboto-thin";
     padding: 1.5rem;
     text-align: center;
     box-sizing: border-box;
@@ -171,6 +172,7 @@ a {
     width: 30%;
     border: 1px solid #dee2e6;
     border-radius: 0.5rem;
+    font-family: "roboto-light";
 }
 
 .project-card-figure,
@@ -206,12 +208,14 @@ a {
 
 .project-card-title {
     height: 10%;
+    justify-content: end;
+    color: #46535D;
+    font-family: sans-serif;
 }
 
 .project-card-description {
     height: 20%;
     box-sizing: border-box;
-    font-family: "roboto-light";
 }
 
 .project-card-link {

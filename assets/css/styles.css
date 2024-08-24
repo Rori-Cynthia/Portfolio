@@ -201,6 +201,7 @@ a {
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+    border-radius: inherit;
 }
 
 .project-card-title {

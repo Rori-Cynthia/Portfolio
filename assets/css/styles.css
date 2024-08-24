@@ -10,6 +10,20 @@
         url("../fonts/robotocondensed-variablefont_wght-webfont.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "roboto-light";
+    src: url("../fonts/roboto-light-webfont.woff") format("woff"),
+        url("../fonts/roboto-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "roboto-thin";
+    src: url("../fonts/roboto-thin-webfont.woff") format("woff"),
+        url("../fonts/roboto-thin-webfont.woff2") format("woff2");
+}
+
+
+
 /* Estilos generales */
 body {
     font-family: sans-serif;
@@ -121,7 +135,3 @@ a {
     border: 1px solid black;
     margin-bottom: 10vh;
 }
-
-
-
-

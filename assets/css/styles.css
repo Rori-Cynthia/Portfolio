@@ -135,3 +135,24 @@ a {
     border: 1px solid black;
     margin-bottom: 10vh;
 }
+
+#projects-title-container {
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    background-color: slateblue;
+    width: 35%;
+}
+
+#work h3 {
+    margin: 0;
+    width: 30%;
+    font-family: "roboto-light";
+    padding: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}

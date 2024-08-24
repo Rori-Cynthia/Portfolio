@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     width: 75rem;
     height: 100%;
-    margin: 10vh auto;
+    margin: 4.375rem auto 0 auto;
 }
 
 /* Estilos Navbar */
@@ -36,7 +36,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    height: 10%;
+    height: 10vh;
     background-color: #FEFEFE;
 }
 
@@ -65,7 +65,7 @@ a {
 /* Estilos sección home */
 #home {
     display: flex;
-    height: 35.25rem;
+    height: 35.2rem;
     width: 100%;
     border: 1px solid black;
     margin-bottom: 10vh;
@@ -115,3 +115,11 @@ h1 {
 }
 
 /* Sección work */
+#work{
+    height: 35.2rem;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10vh;
+}
+
+

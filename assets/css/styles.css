@@ -81,7 +81,6 @@ a {
     display: flex;
     height: 35.2rem;
     width: 100%;
-    border: 1px solid black;
     margin-bottom: 10vh;
 }
 
@@ -132,7 +131,6 @@ a {
 #work{
     height: 35.2rem;
     width: 100%;
-    border: 1px solid black;
     margin-bottom: 10vh;
 }
 
@@ -144,7 +142,7 @@ a {
 
 .line {
     height: 1px;
-    background-color: slateblue;
+    background-color: #FF4E88;
     width: 35%;
 }
 
@@ -219,4 +217,5 @@ a {
     height: 10%;
     font-size: small;
     text-decoration: underline;
+    color: #FF4E88;
 }

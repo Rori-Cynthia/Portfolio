@@ -156,3 +156,67 @@ a {
     text-align: center;
     box-sizing: border-box;
 }
+
+/* Contenedor de tarjetas */
+#projects-container {
+    display: flex;
+    height: 75%;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.project-card-figure,
+.project-card-img,
+.project-card-title,
+.project-card-description,
+.project-card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.project-card-title,
+.project-card-description,
+.project-card-link {
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.project-card-figure {
+    height: 60%;
+    border-radius: inherit;
+}
+
+.project-card-img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.project-card-title {
+    height: 10%;
+}
+
+.project-card-description {
+    height: 20%;
+    box-sizing: border-box;
+    font-family: "roboto-light";
+}
+
+.project-card-link {
+    height: 10%;
+    font-size: small;
+    text-decoration: underline;
+}

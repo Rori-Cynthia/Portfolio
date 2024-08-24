@@ -22,8 +22,6 @@
         url("../fonts/roboto-thin-webfont.woff2") format("woff2");
 }
 
-
-
 /* Estilos generales */
 body {
     background-color: #FEFEFE;
@@ -226,4 +224,11 @@ a {
     font-size: small;
     text-decoration: underline;
     color: #FF4E88;
+}
+
+/* Estilos sección de intereses */
+#hobbies{
+    height: 35.2rem;
+    width: 100%;
+    margin-bottom: 10vh;
 }

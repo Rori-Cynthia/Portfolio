@@ -171,7 +171,6 @@ a {
     align-items: center;
     width: 30%;
     border: 1px solid #dee2e6;
-    border-radius: 0.5rem;
     font-family: "roboto-light";
 }
 
@@ -187,6 +186,12 @@ a {
     margin: 0;
 }
 
+.project-card,
+.project-card-figure,
+.project-card-img {
+    border-radius: 0.5rem;
+}
+
 .project-card-title,
 .project-card-description,
 .project-card-link {
@@ -196,14 +201,12 @@ a {
 
 .project-card-figure {
     height: 60%;
-    border-radius: inherit;
 }
 
 .project-card-img {
     object-fit: cover;
     overflow: hidden;
     width: 100%;
-    border-radius: inherit;
 }
 
 .project-card-title {

@@ -153,7 +153,7 @@ a {
 #work h3 {
     margin: 0;
     width: 30%;
-    font-family: "roboto-thin";
+    font-family: "roboto-light";
     padding: 1.5rem;
     text-align: center;
     box-sizing: border-box;
@@ -229,6 +229,7 @@ a {
     font-size: small;
     text-decoration: underline;
     color: #FF4E88;
+    font-weight: bold;
 }
 
 /* Estilos sección de intereses */

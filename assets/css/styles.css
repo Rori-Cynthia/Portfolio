@@ -239,3 +239,44 @@ a {
     width: 100%;
     margin-bottom: 10vh;
 }
+
+/* Estilos contenedor de texto sección intereses */
+#hobbies-information-container {
+    width: 40%;
+}
+
+#hobbies-title-container {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#hobbies span {
+    text-transform: uppercase;
+    font-family: "roboto-regular";
+    font-size: 1.5rem;
+    
+}
+
+#hobbies h3 {
+    margin: 0;
+    text-transform: lowercase;
+    box-sizing: border-box;
+    font-family: "roboto-light";
+    color: #20262E;
+}
+
+#hobbies-text-container {
+    font-family: "roboto-light";
+    padding: 0 1rem;
+}
+
+#hobbie-introduction-text {
+    margin: 0;
+}
+
+/* Estilos contenedor de texto sección intereses */
+#hobbie-image-container {
+    width: 60%;
+}

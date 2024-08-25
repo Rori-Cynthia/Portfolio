@@ -85,8 +85,8 @@ a {
     margin-bottom: 10vh;
 }
 
-#introduction-container,
-#figure-container {
+#home-presentation-container,
+#home-figure-container {
     width: 50%;
 }
 
@@ -115,7 +115,7 @@ a {
     height: 30%;
 }
 
-#figure-container {
+#home-figure-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,12 +163,12 @@ a {
     justify-content: center;
 }
 
-#projects-title-container {
+#work-title-container {
     height: 15%;
 }
 
 /* Contenedor de tarjetas sección work*/
-#projects-container {
+#work-projects-container {
     display: flex;
     height: 75%;
     padding: 1rem;
@@ -278,7 +278,7 @@ a {
     font-family: "roboto-light";
 }
 
-#hobbie-introduction-text {
+#hobbies-introduction-text {
     margin: 0;
 }
 
@@ -294,6 +294,10 @@ a {
     color: slateblue;
     font-style: italic;
     font-weight: bold;
+}
+
+#hobbies-dynamic-container {
+    display: none;
 }
 
 /* Estilos contenedor de imagen sección intereses */

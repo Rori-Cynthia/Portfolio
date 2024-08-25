@@ -136,25 +136,35 @@ a {
 }
 
 /* Contenedor de titulo de sección work*/
-#projects-title-container {
-    height: 15%;
+.line-title-container {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .line {
+    width: 100%;
     height: 1px;
     background-color: #FF4E88;
-    width: 35%;
 }
 
-#work h3 {
-    margin: 0;
-    width: 30%;
-    font-family: "roboto-light";
-    padding: 1.5rem;
-    text-align: center;
+.line, .line-title {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.line-title {
+    display: flex;
+    margin: 0;
+    font-family: "roboto-light";
+    justify-content: center;
+}
+
+#projects-title-container {
+    height: 15%;
 }
 
 /* Contenedor de tarjetas sección work*/
@@ -240,35 +250,50 @@ a {
 /* Estilos contenedor de texto sección intereses */
 #hobbies-information-container {
     width: 40%;
+    padding: 0 1rem;
 }
 
-#hobbies-title-container {
+#hobbies-main-title-container {
     height: 10%;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
 }
 
 #hobbies span {
     text-transform: uppercase;
     font-family: "roboto-regular";
     font-size: 1.5rem;
+    padding-right: 0.5rem;
 }
 
-#hobbies h3 {
+#hobbies-main-title {
     margin: 0;
     text-transform: lowercase;
     box-sizing: border-box;
     font-family: "roboto-light";
 }
 
-#hobbies-text-container {
+#hobbies-introduction-text-container {
+    height: 40%;
     font-family: "roboto-light";
-    padding: 0 1rem;
 }
 
 #hobbie-introduction-text {
     margin: 0;
+}
+
+#hobbie-card-title-container {
+    height: 10%;
+    font-weight: 200;
+}
+
+#hobbie-card-text {
+    height: 40%;
+    font-family: "roboto-light";
+    padding: 0 1rem;
+    color: slateblue;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* Estilos contenedor de imagen sección intereses */

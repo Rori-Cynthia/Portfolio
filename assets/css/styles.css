@@ -229,8 +229,8 @@ a {
 
 /* Estilos sección de intereses */
 #hobbies{
+    display: flex;
     height: 35.2rem;
     width: 100%;
     margin-bottom: 10vh;
 }
-

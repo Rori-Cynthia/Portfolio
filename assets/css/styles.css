@@ -35,7 +35,7 @@ body {
 }
 
 #page-wrapper {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 75rem;
     height: 100%;
@@ -129,7 +129,7 @@ a {
 }
 
 /* Estilos sección work */
-#work{
+#work {
     height: 35.2rem;
     width: 100%;
     margin-bottom: 10vh;
@@ -176,7 +176,6 @@ a {
 }
 
 .project-card-figure,
-.project-card-img,
 .project-card-title,
 .project-card-description,
 .project-card-link {
@@ -230,11 +229,12 @@ a {
 }
 
 /* Estilos sección de intereses */
-#hobbies{
+#hobbies {
     display: flex;
     height: 35.2rem;
     width: 100%;
     margin-bottom: 10vh;
+    padding: 10vh 0;
 }
 
 /* Estilos contenedor de texto sección intereses */
@@ -253,7 +253,6 @@ a {
     text-transform: uppercase;
     font-family: "roboto-regular";
     font-size: 1.5rem;
-    
 }
 
 #hobbies h3 {
@@ -272,7 +271,17 @@ a {
     margin: 0;
 }
 
-/* Estilos contenedor de texto sección intereses */
+/* Estilos contenedor de imagen sección intereses */
 #hobbie-image-container {
     width: 60%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbie-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
 }

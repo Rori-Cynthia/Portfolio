@@ -40,7 +40,7 @@ body {
     width: 75rem;
     height: 100%;
     margin: 4.375rem auto 0 auto;
-    color: #46535D;
+    color: #20262E;
 }
 
 .highlight {
@@ -69,12 +69,11 @@ header {
 }
 
 li {
-
     margin: 0 3rem;
 }
 
 a {
-    color: #405D72;
+    color: #20262E;
     text-decoration: none;
 }
 
@@ -112,7 +111,6 @@ a {
 
 #home h1 {
     font-family: "roboto-regular-condensed";
-    color: #6D8299;
     font-size: 1.25rem;
     height: 30%;
 }
@@ -157,7 +155,6 @@ a {
     padding: 1.5rem;
     text-align: center;
     box-sizing: border-box;
-    color: #20262E;
 }
 
 /* Contenedor de tarjetas sección work*/
@@ -264,7 +261,6 @@ a {
     text-transform: lowercase;
     box-sizing: border-box;
     font-family: "roboto-light";
-    color: #20262E;
 }
 
 #hobbies-text-container {

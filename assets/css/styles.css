@@ -34,13 +34,16 @@ body {
     box-sizing: border-box;
 }
 
-#page-wrapper {
+.page-wrapper {
     display: flex;
     flex-direction: column;
     width: 75rem;
     height: 100%;
-    margin: 4.375rem auto 0 auto;
     color: #20262E;
+}
+
+#static-section {
+    margin: 4.375rem auto 0 auto;
 }
 
 .highlight {
@@ -53,7 +56,7 @@ header {
     position: fixed;
     top: 0;
     height: 10vh;
-    background-color: #FEFEFE;
+    /*background-color: #FEFEFE;*/
 }
 
 .navbar-container {
@@ -159,12 +162,13 @@ a {
 .line-title {
     display: flex;
     margin: 0;
-    font-family: "roboto-light";
     justify-content: center;
+    font-family: "roboto-light";
 }
 
 #work-title-container {
     height: 15%;
+    color: #BC8CF2;
 }
 
 /* Contenedor de tarjetas sección work*/
@@ -312,5 +316,32 @@ a {
 #hobbie-image {
     object-fit: cover;
     overflow: hidden;
+    width: 100%;
+}
+
+/*Estilos sección de contacto */
+#iframe-contact-page,
+#iframe-contact-page-wrapper,
+#iframe-contact {
+    box-sizing: border-box;
+}
+
+#iframe-contact-page {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#iframe-contact-page-wrapper {
+    margin: 0 auto;
+}
+
+#iframe-contact {
+    height: 35.2rem;
+    width: 100%;
+}
+
+#contact {
+    height: 90vh;
     width: 100%;
 }

@@ -43,6 +43,10 @@ body {
     color: #46535D;
 }
 
+.highlight {
+    color: #FF4E88;
+}
+
 /* Estilos Navbar */
 header {
     width: 100%;

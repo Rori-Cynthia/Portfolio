@@ -56,7 +56,7 @@ header {
     position: fixed;
     top: 0;
     height: 10vh;
-    /*background-color: #FEFEFE;*/
+    background-color: #FEFEFE;
 }
 
 .navbar-container {
@@ -151,7 +151,8 @@ a {
     background-color: #FF4E88;
 }
 
-.line, .line-title {
+.line,
+.line-title {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
@@ -338,7 +339,10 @@ a {
 
 #iframe-contact {
     height: 35.2rem;
-    width: 100%;
+    background-image: url('../img/rombos.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 #contact {

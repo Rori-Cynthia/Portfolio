@@ -40,6 +40,7 @@ body {
     width: 75rem;
     height: 100%;
     color: #20262E;
+    font-family: "roboto-regular";
 }
 
 #static-section {
@@ -76,7 +77,7 @@ li {
 }
 
 a {
-    color: #20262E;
+    color: #474A56;
     text-decoration: none;
 }
 
@@ -169,7 +170,7 @@ a {
 
 #work-title-container {
     height: 15%;
-    color: #BC8CF2;
+    color: slateblue;
 }
 
 /* Contenedor de tarjetas sección work*/
@@ -203,7 +204,7 @@ a {
 
 .project-card,
 .project-card-figure,
-.project-card-img {
+.project-card-image {
     border-radius: 0.5rem;
 }
 
@@ -218,7 +219,7 @@ a {
     height: 60%;
 }
 
-.project-card-img {
+.project-card-image {
     object-fit: cover;
     overflow: hidden;
     width: 100%;
@@ -233,6 +234,7 @@ a {
 .project-card-description {
     height: 20%;
     box-sizing: border-box;
+    font-family: "roboto-regular";
 }
 
 .project-card-link {
@@ -241,6 +243,8 @@ a {
     text-decoration: underline;
     color: #FF4E88;
     font-weight: bold;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 /* Estilos sección de intereses */
@@ -249,11 +253,13 @@ a {
     height: 35.2rem;
     width: 100%;
     margin-bottom: 10vh;
-    padding: 10vh 0;
+    padding: 1.5vh 0;
 }
 
 /* Estilos contenedor de texto sección intereses */
 #hobbies-information-container {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     padding: 0 1rem;
 }
@@ -279,30 +285,48 @@ a {
 }
 
 #hobbies-introduction-text-container {
-    height: 40%;
-    font-family: "roboto-light";
+    height: 30%;
+
 }
 
 #hobbies-introduction-text {
     margin: 0;
 }
 
+#clue {
+    display: flex;
+    align-items: center;
+    height: 5%;
+    font-family: "roboto-regular-condensed";
+    font-size: small;
+    margin: 0;
+}
+
 #hobbie-card-title-container {
-    height: 10%;
-    font-weight: 200;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hobbie-card-text-container {
+    height: 75%;
 }
 
 #hobbie-card-text {
-    height: 40%;
     font-family: "roboto-light";
     padding: 0 1rem;
     color: slateblue;
     font-style: italic;
     font-weight: bold;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%
 }
 
-#hobbies-dynamic-container {
-    display: none;
+#dynamic-container {
+    height: 45%;
+    display: block;
 }
 
 /* Estilos contenedor de imagen sección intereses */
@@ -337,15 +361,17 @@ a {
     margin: 0 auto;
 }
 
-#iframe-contact {
-    height: 35.2rem;
-    background-image: url('../img/rombos.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-
 #contact {
     height: 90vh;
     width: 100%;
+}
+
+area {
+    cursor: pointer;
+}
+
+#iframe-contact {
+    background-image: url("../img/contact-background.jpeg");
+    background-size: cover;
+    background-position: center;
 }

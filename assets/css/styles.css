@@ -326,7 +326,7 @@ a {
 
 #dynamic-container {
     height: 45%;
-    display: block;
+    display: none;
 }
 
 /* Estilos contenedor de imagen sección intereses */

@@ -21,6 +21,7 @@ body {
     background-color: #FEFEFE;
     height: 100%;
     font-family: "roboto-regular";
+    z-index: 1;
 }
 
 .container-static {
@@ -29,7 +30,8 @@ body {
     box-sizing: border-box;
 }
 
-#static-section, #bootstrap-section {
+#static-section,
+#bootstrap-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +56,7 @@ header {
     opacity: 0.95;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 #navbar {
@@ -83,6 +86,7 @@ a {
 }
 
 /* Estilos sección home */
+/* Estilos sección home presentación */
 #home {
     display: flex;
     height: 35.161rem;
@@ -120,17 +124,60 @@ a {
     height: 30%;
 }
 
+/* Estilos sección home imagen */
 #home-figure-container {
     display: flex;
+    align-items: center;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+#diamonds-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
 }
 
 #cover-image {
-    max-width: 25rem;
-    max-height: 25rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.diamond {
+    transform: rotate(45deg);
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #BC8CF2;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 228, 230, 0.9), /* Rosa muy claro */
+        rgba(230, 204, 255, 0.9), /* Lila muy claro */
+        rgba(204, 240, 255, 0.9)  /* Celeste muy claro */
+    );
+}
+
+#big-diamond {
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    left: 100%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#medium-diamond {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#small-diamond {
+    width: 50px;
+    height: 50px;
+    top: 0%;
+    left: 75%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /* Estilos sección work */

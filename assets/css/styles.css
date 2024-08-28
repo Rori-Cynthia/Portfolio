@@ -16,35 +16,28 @@
         url("../fonts/roboto-light-webfont.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: "roboto-thin";
-    src: url("../fonts/roboto-thin-webfont.woff") format("woff"),
-        url("../fonts/roboto-thin-webfont.woff2") format("woff2");
-}
-
 /* Estilos generales */
 body {
     background-color: #FEFEFE;
     height: 100%;
+    font-family: "roboto-regular";
 }
 
-.container {
+.container-static {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.page-wrapper {
+#static-section, #bootstrap-section {
     display: flex;
     flex-direction: column;
-    width: 75rem;
-    height: 100%;
-    color: #20262E;
-    font-family: "roboto-regular";
+    justify-content: center;
+    align-items: center;
 }
 
 #static-section {
-    margin: 4.375rem auto 0 auto;
+    margin: 4.375rem auto 0;
 }
 
 .highlight {
@@ -56,13 +49,20 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    height: 10vh;
+    min-height: 10vh;
     background-color: #FEFEFE;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+}
+
+#navbar {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .navbar-container {
     font-family: "roboto-regular";
-    font-size: 1.25rem;
 }
 
 .nav-links {
@@ -79,13 +79,14 @@ li {
 a {
     color: #474A56;
     text-decoration: none;
+    font-size: 1.15rem;
 }
 
 /* Estilos sección home */
 #home {
     display: flex;
-    height: 35.2rem;
-    width: 100%;
+    height: 35.161rem;
+    width: 75rem;
     margin-bottom: 10vh;
 }
 
@@ -104,7 +105,7 @@ a {
 
 #home h2 {
     color: #BC8CF2;
-    font-size: 4.9rem;
+    font-size: 4.8rem;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -134,12 +135,12 @@ a {
 
 /* Estilos sección work */
 #work {
-    height: 35.2rem;
-    width: 100%;
+    height: 35.161rem;
+    width: 75rem;
     margin-bottom: 10vh;
 }
 
-/* Contenedor de titulo de sección work*/
+/* Contenedor de titulo de sección work */
 .line-title-container {
     display: flex;
     align-items: center;
@@ -148,32 +149,30 @@ a {
 
 .line {
     width: 100%;
-    height: 1px;
+    height: 1.5px;
     background-color: #FF4E88;
 }
 
-.line,
 .line-title {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.line-title {
+    width: 100%;
     display: flex;
     margin: 0;
     justify-content: center;
-    font-family: "roboto-light";
+    font-weight: normal;
+    text-align: center;
 }
 
 #work-title-container {
     height: 15%;
-    color: slateblue;
 }
 
-/* Contenedor de tarjetas sección work*/
+#work-title {
+    font-family: "roboto-light";
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de tarjetas sección work */
 #work-projects-container {
     display: flex;
     height: 75%;
@@ -250,24 +249,26 @@ a {
 /* Estilos sección de intereses */
 #hobbies {
     display: flex;
-    height: 35.2rem;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 35.161rem;
+    width: 75rem;
     margin-bottom: 10vh;
-    padding: 1.5vh 0;
 }
 
 /* Estilos contenedor de texto sección intereses */
 #hobbies-information-container {
     display: flex;
     flex-direction: column;
+    height: 25.623rem;
     width: 40%;
-    padding: 0 1rem;
+    padding-right: 1rem;
 }
 
 #hobbies-main-title-container {
     height: 10%;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 #hobbies span {
@@ -285,27 +286,30 @@ a {
 }
 
 #hobbies-introduction-text-container {
-    height: 30%;
-
+    height: 35%;
 }
 
 #hobbies-introduction-text {
+    height: 100%;
     margin: 0;
 }
 
 #clue {
     display: flex;
     align-items: center;
-    height: 5%;
+    height: 8%;
     font-family: "roboto-regular-condensed";
     font-size: small;
     margin: 0;
 }
 
+#dynamic-container {
+    height: 47%;
+    display: block;
+}
+
 #hobbie-card-title-container {
     height: 25%;
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -314,55 +318,42 @@ a {
 }
 
 #hobbie-card-text {
-    font-family: "roboto-light";
     padding: 0 1rem;
     color: slateblue;
     font-style: italic;
-    font-weight: bold;
     box-sizing: border-box;
+    font-family: 'Times New Roman';
+    height: 100%;
     margin: 0;
-    height: 100%
-}
-
-#dynamic-container {
-    height: 45%;
-    display: none;
 }
 
 /* Estilos contenedor de imagen sección intereses */
 #hobbie-image-container {
     width: 60%;
-    margin: 0;
+    height: 25.623rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 #hobbie-image {
     object-fit: cover;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     width: 100%;
 }
 
-/*Estilos sección de contacto */
-#iframe-contact-page,
-#iframe-contact-page-wrapper,
-#iframe-contact {
-    box-sizing: border-box;
-}
-
+/* Estilos sección de contacto */
 #iframe-contact-page {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-#iframe-contact-page-wrapper {
-    margin: 0 auto;
-}
-
 #contact {
-    height: 90vh;
+    height: 89.4vh;
     width: 100%;
 }
 
@@ -371,7 +362,12 @@ area {
 }
 
 #iframe-contact {
+    width: 75rem;
     background-image: url("../img/contact-background.jpeg");
     background-size: cover;
     background-position: center;
+}
+
+#body-bootstrap-section {
+    overflow: hidden;
 }

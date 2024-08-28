@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body class="container">
-    <header class="container">
+<body class="container-static">
+    <header class="container-static" id="navbar">
         <nav>
-            <div class="navbar-container container">
+            <div class="container-static" id="navbar-container">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#work">Work</a></li>
@@ -21,31 +21,31 @@
             </div>
         </nav>
     </header>
-    <main class="container">
-        <div class="container page-wrapper" id="static-section">
-            <section class="container" id="home">
-                <article class="container" id="home-presentation-container">
+    <main class="container-static">
+        <div class="container-static" id="static-section">
+            <section class="container-static" id="home">
+                <article class="container-static" id="home-presentation-container">
                     <h2>Hi!<span>I'm a Full Stack Developer</span></h2>
                     <h1>Passionate and looking for new opportunities to learn and grow. My name is <span
                             class="highlight">Cynthia</span> and I invite you
                         to learn about my work</h1>
                 </article>
-                <article class="container" id="home-figure-container">
+                <article class="container-static" id="home-figure-container">
                     <figure>
                         <img src="./assets/img/cover-image.jpeg" id="cover-image"
                             alt="Imagen de programador trabajando">
                     </figure>
                 </article>
             </section>
-            <section class="container" id="work">
-                <div class="container line-title-container" id="work-title-container">
-                    <div class="container line"></div>
-                    <h3 class="line-title">Take a look at my latest projects</h3>
-                    <div class="container line"></div>
+            <section class="container-static" id="work">
+                <div class="container-static line-title-container" id="work-title-container">
+                    <div class="container-static line"></div>
+                    <h3 class="line-title" id="work-title">Take a look at my latest projects</h3>
+                    <div class="container-static line"></div>
                 </div>
                 <div class="container" id="work-projects-container">
-                    <article class="container project-card">
-                        <figure class="container project-card-figure">
+                    <article class="container-static project-card">
+                        <figure class="container-static project-card-figure">
                             <img src="./assets/img/curriculum.jpg" class="project-card-image"
                                 id="resume-project-card-image" alt="Resume illustration">
                         </figure>
@@ -57,8 +57,8 @@
                             class="project-card-link" target="_blank" rel="noopener noreferrer">Download
                             from Github</a>
                     </article>
-                    <article class="container project-card">
-                        <figure class="container project-card-figure">
+                    <article class="container-static project-card">
+                        <figure class="container-static project-card-figure">
                             <img src="./assets/img/login.jpg" class="project-card-image" id="login-project-card-image"
                                 alt="Login ilustration">
                         </figure>
@@ -68,8 +68,8 @@
                             from
                             Github</a>
                     </article>
-                    <article class="container project-card">
-                        <figure class="container project-card-figure">
+                    <article class="container-static project-card">
+                        <figure class="container-static project-card-figure">
                             <img src="./assets/img/excel-blog-image.jpg" class="project-card-image"
                                 id="blog-project-card-image" alt="Blog ilustration">
                         </figure>
@@ -99,27 +99,26 @@
                     </div>
                     <p id="clue">Maybe You can take it as a game. They say that whoever seeks; finds...</p>
                     <div class="container" id="dynamic-container">
-                        <div class="container line-title-container" id="hobbie-card-title-container">
-                            <div class="container line"></div>
-                            <h3 id="hobbie-card-title" class="line-title highlight">Learning</h3>
-                            <div class="container line"></div>
+                        <div class="container-static line-title-container" id="hobbie-card-title-container">
+                            <div class="container-static line"></div>
+                            <h3 id="hobbie-card-title" class="line-title highlight">Reading</h3>
+                            <div class="container-static line"></div>
                         </div>
                         <div class="container" id="hobbie-card-text-container">
-                            <p id="hobbie-card-text"></p>
+                            <p id="hobbie-card-text">I've always had a passion for reading and collecting books. I love having them close, although my adult life leaves little time for this. I also enjoy audiobooks, so I'm not sure if my love lies more in reading or simply listening to stories. One of my favorite authors is H.P. Lovecraft, and some of his books that I cherish are The Strange Case of Charles Dexter Ward, The Shadow Over Innsmouth, and The Dunwich Horror.</p>
                         </div>
                     </div>
                 </article>
                 <article class="container" id="hobbie-image-container">
-                    <figure class="container hobbie-figure-container">
+                    <figure class="container-static hobbie-figure-container">
                         <img src="./assets/img/hobbies-image-reference.webp" id="hobbie-image" alt="Game image"
                             usemap="#hobbie-image-map">
                     </figure>
-                </article>
                 <map name="hobbie-image-map">
                     <area coords="308,103,365,146" alt="Learning"
                         data-text="Learning new things is one of my greatest joys in life. I believe that if someone can imagine something, there's likely another person already working on it, and even another who is teaching it. I love learning from various sources, as all knowledge is valuable and can be found in both traditional media and unexpected places.">
                     <area coords="448,325,594,405" alt="Reading"
-                        data-text="I've always had a passion for reading and collecting books. I love having them close by and discovering new adventures in my free time, although my adult life leaves little time for this. I also enjoy audiobooks, so I'm not sure if my love lies more in reading or simply listening to stories. One of my favorite authors is H.P. Lovecraft, and some of his books that I cherish are The Strange Case of Charles Dexter Ward, The Shadow Over Innsmouth, and The Dunwich Horror.">
+                        data-text="I've always had a passion for reading and collecting books. I love having them close, although my adult life leaves little time for this. I also enjoy audiobooks, so I'm not sure if my love lies more in reading or simply listening to stories. One of my favorite authors is H.P. Lovecraft, and some of his books that I cherish are The Strange Case of Charles Dexter Ward, The Shadow Over Innsmouth, and The Dunwich Horror.">
                     <area coords="193,77,247,138" alt="Gaming"
                         data-text="Like many from my generation, I have a deep passion for video games. They not only occupy a part of my time but also channel and express much of my energy and emotions. I currently enjoy playing World of Warcraft and exploring various games on the Steam platform. Additionally, I've spent countless hours on League of Legends (unsuccessfully).">
                     <area coords="425,249,488,296" alt="Cinema"
@@ -131,8 +130,8 @@
                 </map>
             </section>
         </div>
-        <div class="container" id="booststrap-section">
-            <section class="container" id="contact">
+        <div class="container-static">
+            <section class="container-static" id="contact">
                 <iframe src="./assets/pages/contact.html" id="iframe-contact-page"></iframe>
             </section>
         </div>

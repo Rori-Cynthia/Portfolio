@@ -305,7 +305,7 @@ a {
 
 #dynamic-container {
     height: 47%;
-    display: block;
+    display: none;
 }
 
 #hobbie-card-title-container {

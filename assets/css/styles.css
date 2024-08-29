@@ -17,17 +17,22 @@
 }
 
 /* Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FEFEFE;
     height: 100%;
     font-family: "roboto-regular";
     z-index: 1;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .container-static {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 #static-section,
@@ -36,10 +41,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#static-section {
-    margin: 4.375rem auto 0;
 }
 
 .highlight {
@@ -51,7 +52,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    min-height: 10vh;
+    min-height: 4.395rem;
     background-color: #FEFEFE;
     opacity: 0.95;
     display: flex;
@@ -89,54 +90,55 @@ a {
 /* Estilos sección home presentación */
 #home {
     display: flex;
-    height: 35.161rem;
+    height: 36.16rem;
+    align-items: end;
     width: 75rem;
-    margin-bottom: 10vh;
 }
 
 #home-presentation-container,
 #home-figure-container {
     width: 50%;
+    height: 25rem;
 }
 
 #home h1,
 #home h2 {
     padding: 1rem;
     margin: 0;
-    width: 100%;
     box-sizing: border-box;
 }
 
 #home h2 {
     color: #BC8CF2;
     font-size: 4.8rem;
-    height: 70%;
-    display: flex;
+    height: 75%;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    justify-content: flex-start;
     font-family: sans-serif;
 }
 
 #home h1 {
     font-family: "roboto-regular-condensed";
     font-size: 1.25rem;
-    height: 30%;
+    height: 25%;
+}
+
+#diamonds-container-greeting {
+    display: none;
 }
 
 /* Estilos sección home imagen */
 #home-figure-container {
     display: flex;
     align-items: center;
-    overflow: hidden;
     flex-direction: column;
     justify-content: center;
 }
 
-#diamonds-container {
-    position: relative;
+#diamonds-container-image {
     width: 400px;
     height: 400px;
+    position: relative;
 }
 
 #cover-image {
@@ -147,15 +149,17 @@ a {
     transform: rotate(45deg);
     position: absolute;
     box-sizing: border-box;
-    background: linear-gradient(
-        to bottom right,
-        rgba(255, 228, 230, 0.9), /* Rosa muy claro */
-        rgba(230, 204, 255, 0.9), /* Lila muy claro */
-        rgba(204, 240, 255, 0.9)  /* Celeste muy claro */
-    );
+    background: linear-gradient(to bottom right,
+            rgba(255, 228, 230, 0.9),
+            /* Rosa muy claro */
+            rgba(230, 204, 255, 0.9),
+            /* Lila muy claro */
+            rgba(204, 240, 255, 0.9)
+            /* Celeste muy claro */
+        );
 }
 
-#big-diamond {
+#big-diamond-on-image {
     width: 140px;
     height: 140px;
     top: 50%;
@@ -163,7 +167,7 @@ a {
     transform: translateX(-50%) rotate(45deg);
 }
 
-#medium-diamond {
+#medium-diamond-on-image {
     width: 100px;
     height: 100px;
     top: 30%;
@@ -171,7 +175,7 @@ a {
     transform: translateX(-50%) rotate(45deg);
 }
 
-#small-diamond {
+#small-diamond-on-image {
     width: 50px;
     height: 50px;
     top: 0%;
@@ -181,9 +185,12 @@ a {
 
 /* Estilos sección work */
 #work {
-    height: 35.161rem;
+    display: flex;
+    flex-direction: column;
+    height: 28.568rem;
+    padding-top: 8.79rem;
     width: 75rem;
-    margin-bottom: 10vh;
+    justify-content: start;
 }
 
 /* Contenedor de titulo de sección work */
@@ -206,8 +213,8 @@ a {
     justify-content: center;
     font-weight: normal;
     text-align: center;
-
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 #work-title-container {
@@ -223,17 +230,17 @@ a {
 /* Contenedor de tarjetas sección work */
 #work-projects-container {
     display: flex;
-    height: 75%;
-    padding: 1rem;
-    gap: 2rem;
     justify-content: center;
+    height: 75%;
+    padding: 0 2rem;
+    gap: 2rem;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    flex: 1;
     border: 1px solid #dee2e6;
     font-family: "roboto-light";
 }
@@ -298,32 +305,30 @@ a {
 #hobbies {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 35.161rem;
+    align-items: start;
+    height: 25.911rem;
+    padding-top: 8.79rem;
     width: 75rem;
-    margin-bottom: 10vh;
+    gap: 0;
 }
 
 /* Estilos contenedor de texto sección intereses */
 #hobbies-information-container {
     display: flex;
     flex-direction: column;
-    height: 25.623rem;
+    height: 25.911rem;
     width: 40%;
     padding-right: 1rem;
 }
 
-#hobbies-main-title-container {
-    height: 10%;
-    display: flex;
-    align-items: start;
+#hobbies-introduction-container {
+    height: 50%;
 }
 
-#hobbies span {
-    text-transform: uppercase;
-    font-family: "roboto-regular";
-    font-size: 1.5rem;
-    padding-right: 0.5rem;
+#hobbies-main-title-container {
+    height: 20%;
+    display: flex;
+    align-items: start;
 }
 
 #hobbies-main-title {
@@ -333,8 +338,15 @@ a {
     font-family: "roboto-light";
 }
 
+#hobbies span {
+    text-transform: uppercase;
+    font-family: "roboto-regular";
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
 #hobbies-introduction-text-container {
-    height: 35%;
+    height: 70%;
 }
 
 #hobbies-introduction-text {
@@ -344,19 +356,22 @@ a {
 
 #clue {
     display: flex;
-    align-items: center;
-    height: 8%;
+    align-items: flex-end;
+    height: 10%;
     font-family: "roboto-regular-condensed";
     font-size: small;
     margin: 0;
 }
 
 #dynamic-container {
-    height: 47%;
-    display: none;
+    margin: 0 auto;
+    text-align: center;
+    height: 50%;
+    width: 100%;
 }
 
 #hobbie-card-title-container {
+    align-items: center;
     height: 25%;
     gap: 1rem;
 }
@@ -378,19 +393,16 @@ a {
 /* Estilos contenedor de imagen sección intereses */
 #hobbie-image-container {
     width: 60%;
-    height: 25.623rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
+    height: 25.911rem;
+}
+
+#hobbie-figure-container {
+    height: 25.911rem;
 }
 
 #hobbie-image {
     object-fit: cover;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
+    width: 44.9rem;
 }
 
 /* Estilos sección de contacto */
@@ -398,11 +410,13 @@ a {
     width: 100%;
     height: 100%;
     border: none;
+    overflow: hidden;
 }
 
 #contact {
-    height: 89.4vh;
     width: 100%;
+    height: 43.9rem;
+    overflow: hidden;
 }
 
 area {
@@ -414,8 +428,276 @@ area {
     background-image: url("../img/contact-background.jpeg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
-#body-bootstrap-section {
+#static-section {
+    margin-bottom: 5rem;
+}
+
+#bootstrap-section {
+    margin: 10vh 0 0 0;
     overflow: hidden;
+}
+
+/* Media Querys */
+/* width: 1120px a 1319px */
+@media(min-width:1120px) and (max-width: 1319px) {
+    #home {
+        width: 90%;
+    }
+
+    #home h2 {
+        font-size: 4.3rem;
+        padding: 0 1rem;
+        width: 80%;
+        height: 80%;
+    }
+
+    #home h1 {
+        height: 20%;
+        font-size: 1.1rem;
+    }
+
+    #work {
+        width: 90%;
+    }
+
+    #work-title-container {
+        height: 20%;
+    }
+
+    #work-projects-container {
+        height: 80%;
+    }
+
+    #hobbies {
+        padding: 8.79rem 0 1.0998rem 0;
+        height: 34.061rem;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #hobbies-information-container {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        flex: 1;
+    }
+
+    #hobbies-introduction-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 90%;
+    }
+
+    #hobbies-main-title-container {
+        height: 25%;
+    }
+
+    #hobbies-main-title {
+        justify-content: flex-start;
+    }
+
+    #hobbies-introduction-text-container {
+        height: 55%;
+    }
+
+    #hobbies-introduction-text {
+        font-size: 1rem;
+    }
+
+    #clue {
+        margin: 0;
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    #dynamic-container {
+        display: none;
+        margin: 0 auto;
+        height: 100%;
+        width: 60%;
+        text-align: center;
+    }
+
+    #hobbie-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    #clue {
+        font-size: small;
+    }
+
+    #iframe-contact {
+        width: 90%;
+    }
+}
+
+/* width: 820px a 1119 */
+@media (min-width: 820px) and (max-width: 1119px) {
+    #home {
+        width: 100%;
+        position: relative;
+    }
+
+    #home-presentation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+    }
+
+    #home h1,
+    #home h2 {
+        text-align: center;
+        width: 80%;
+    }
+
+    #home h2 {
+        font-size: 4.3rem;
+        padding: 0 1rem;
+        max-width: 45%;
+        height: 60%;
+        box-sizing: border-box;
+    }
+
+    #home h1 {
+        height: 20%;
+        font-size: 1.1rem;
+    }
+
+    #diamonds-container-greeting {
+        display: block;
+    }
+
+    #big-diamond-on-greeting {
+        width: 150px;
+        height: 150px;
+        top: 35%;
+        left: 85%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: center
+    }
+
+    #medium-diamond-on-greeting {
+        width: 100px;
+        height: 100px;
+        top: 60%;
+        left: 10%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: center
+    }
+
+    #small-diamond-on-greeting {
+        width: 35px;
+        height: 35px;
+        top: 105%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: center;
+    }
+
+    #home-figure-container {
+        display: none;
+    }
+
+    #work-projects-container {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .project-card {
+        font-size: 0.9rem;
+    }
+    
+    #work {
+        width: 90%;
+    }
+
+    #work-title-container {
+        height: 20%;
+    }
+
+    #work-projects-container {
+        height: 80%;
+    }
+
+    #hobbies {
+        width: 90%;
+        height: 34rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #hobbies-information-container {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    #iframe-contact {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hobbies-introduction-container {
+        height: 100%;
+    }
+
+    #hobbies-main-title-container {
+        height: 25%;
+    }
+
+    #hobbies-introduction-text-container  {
+        height: fit-content;
+    }
+
+    #hobbies-introduction-text {
+        font-size: 0.9rem;
+    }
+
+    #clue {
+        height: 15%;
+        align-items: flex-end;
+        font-size: x-small;
+    }
+
+    #dynamic-container {
+        display: none;
+        height: 100%;
+        width: 80%;
+        text-align: center;
+    }
+
+    #hobbie-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+
+    }
+
+    #iframe-contact {
+        width: 90%;
+    }
+}
+
+    @media (min-width: 820px) and (max-width: 819px) {
+        #iframe-contact {
+            width: 90%;
+    }
+
+    /* profe hasta aquí llego con las medias-qwery por que me cansé */
 }

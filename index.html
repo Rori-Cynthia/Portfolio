@@ -25,18 +25,23 @@
         <div class="container-static" id="static-section">
             <section class="container-static" id="home">
                 <article class="container-static" id="home-presentation-container">
-                    <h2>Hi!<span>I'm a Full Stack Developer</span></h2>
-                    <h1>Passionate and looking for new opportunities to learn and grow. My name is <span
+                    <h2>Hi!<br>I'm a Full Stack Developer</span></h2>
+                    <h1 id="subtitle-dev-name">Passionate and looking for new opportunities to learn and grow. My name is <span
                             class="highlight">Cynthia</span> and I invite you
                         to learn about my work</h1>
+                    <div class="container-static" id="diamonds-container-greeting">
+                        <div class="diamond" id="big-diamond-on-greeting"></div>
+                        <div class="diamond" id="small-diamond-on-greeting"></div>
+                        <div class="diamond" id="medium-diamond-on-greeting"></div>
+                    </div>
                 </article>
                 <article class="container-static" id="home-figure-container">
-                    <figure class="container-static" id="diamonds-container">
+                    <figure class="container-static" id="diamonds-container-image">
                         <img src="./assets/img/cover-image-small.jpeg" id="cover-image"
                             alt="Imagen de programador trabajando">
-                            <div class="diamond" id="big-diamond"></div>
-                            <div class="diamond" id="small-diamond"></div>
-                            <div class="diamond" id="medium-diamond"></div>
+                            <div class="diamond" id="big-diamond-on-image"></div>
+                            <div class="diamond" id="small-diamond-on-image"></div>
+                            <div class="diamond" id="medium-diamond-on-image"></div>
                     </figure>
                 </article>
             </section>
@@ -86,36 +91,38 @@
                     </article>
                 </div>
             </section>
-            <section class="container" id="hobbies">
-                <article class="container" id="hobbies-information-container">
-                    <div class="container" id="hobbies-main-title-container">
-                        <h3 id="hobbies-main-title"><span class="highlight">Beyond</span>the code</h3>
+            <section class="container-static" id="hobbies">
+                <article class="container-static" id="hobbies-information-container">
+                    <div id="hobbies-introduction-container">
+                        <div class="container-static" id="hobbies-main-title-container">
+                            <h3 id="hobbies-main-title"><span class="highlight">Beyond</span>the code</h3>
+                        </div>
+                        <div class="container-static" id="hobbies-introduction-text-container">
+                            <p id="hobbies-introduction-text">
+                                In addition to my passion for technology and development, I love to immerse myself in a
+                                variety
+                                of activities that I am passionate about. Each hobby offers me a different way to express
+                                myself, and also allows me to disconnect, learn new skills and simply enjoy life in a
+                                different
+                                way. Here I tell you a little more about the activities that fill my days with joy and
+                                creativity.
+                            </p>
+                        </div>
+                        <p id="clue">Maybe You can take it as a game. They say that whoever seeks; finds...</p>
                     </div>
-                    <div class="container" id="hobbies-introduction-text-container">
-                        <p id="hobbies-introduction-text">
-                            In addition to my passion for technology and development, I love to immerse myself in a
-                            variety
-                            of activities that I am passionate about. Each hobby offers me a different way to express
-                            myself, and also allows me to disconnect, learn new skills and simply enjoy life in a
-                            different
-                            way. Here I tell you a little more about the activities that fill my days with joy and
-                            creativity.
-                        </p>
-                    </div>
-                    <p id="clue">Maybe You can take it as a game. They say that whoever seeks; finds...</p>
-                    <div class="container" id="dynamic-container">
+                    <div class="container-static" id="dynamic-container">
                         <div class="container-static line-title-container" id="hobbie-card-title-container">
                             <div class="container-static line"></div>
                             <h3 id="hobbie-card-title" class="line-title highlight"></h3>
                             <div class="container-static line"></div>
                         </div>
-                        <div class="container" id="hobbie-card-text-container">
+                        <div class="container-static" id="hobbie-card-text-container">
                             <p id="hobbie-card-text"></p>
                         </div>
                     </div>
                 </article>
-                <article class="container" id="hobbie-image-container">
-                    <figure class="container-static hobbie-figure-container">
+                <article class="container-static" id="hobbie-image-container">
+                    <figure class="container-static" id="hobbie-figure-container">
                         <img src="./assets/img/hobbies-image-reference.webp" id="hobbie-image" alt="Game image"
                             usemap="#hobbie-image-map">
                     </figure>
@@ -135,7 +142,7 @@
                     </map>
             </section>
         </div>
-        <div class="container-static">
+        <div class="container-static" id="contact-section">
             <section class="container-static" id="contact">
                 <iframe src="./assets/pages/contact.html" id="iframe-contact-page"></iframe>
             </section>

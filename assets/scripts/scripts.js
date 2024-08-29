@@ -1,10 +1,19 @@
+let smallScreen = false;
+
 function mouseOverHobbie() {
+    if (smallScreen) {
+        document.getElementById("hobbies-introduction-container").style.display = "none";
+    }
     document.getElementById("dynamic-container").style.display = "block";
     document.getElementById("hobbie-card-title").textContent = this.alt;
     document.getElementById("hobbie-card-text").textContent = this.dataset.text;
 }
 
 function mouseLeaveHobbie() {
+    if (smallScreen) {
+        document.getElementById("hobbies-introduction-container").style.display = "block";
+    }
+
     document.getElementById("dynamic-container").style.display = "none";
 }
 
@@ -31,6 +40,10 @@ function onScrollNav() {
     scrolledNav.style.boxShadow = "0 1px 8px rgba(0, 0, 0, 0.3)";
 }
 
+function handleScreenChange(event) {
+    smallScreen = event.matches
+}
+
 function loadEvents() {
     for (area of document.querySelectorAll("area")) {
         area.addEventListener("mouseenter", mouseOverHobbie);
@@ -46,6 +59,10 @@ function loadEvents() {
         card.addEventListener("mouseenter", mouseOverCards)
         card.addEventListener("mouseleave", mouseLeaveCards)
     };
+
+    const mediaQuery = window.matchMedia("(max-width: 1319px)");
+    mediaQuery.addEventListener('change', handleScreenChange);
+    handleScreenChange(mediaQuery);
 }
 
 window.addEventListener("load", loadEvents);
